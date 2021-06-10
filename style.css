@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Slab:wght@800&display=swap');
+
+body {
+    background: linear-gradient(#000000, rgb(109, 130, 141));
+
+    margin: 0;
+}
+
+main {
+    background-color: #fff;
+    border: 2px black solid;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+
+    margin: 8vh 10vw;
+}
+
+.site-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-area: 1 / 1 / 2 / 6;
+}
+
+.site-title h3 {
+    font-family: "Roboto Slab";
+    font-size: 4rem;
+    color: #FFFF66;
+
+    text-shadow: 2px 0 0 #000, 0 -3px 0 #000, 
+                 0 3px 0 #000, -2px 0 0 #000;
+
+}
+
+.site-title a {
+    margin-left: 10vw;
+}
+
+.sign-up-container {
+    background-color: #d64040;
+    font-family: "Roboto Slab";
+    font-size: 1.5rem;
+    color: #fff;
+    border: 3px black solid;
+
+    text-decoration: underline;
+    letter-spacing: .2rem;
+
+    padding: .5vh 1vh;
+}
+
+.page {
+    border: 4px black solid;
+    border-right: 5px solid;
+    border-bottom: 2px solid;
+
+    grid-area: 2 / 1 / 6 / 6;
+
+    margin: -10vh 3vw 10vh 5vw;
+    padding: 8vh 0;
+    
+}
+
+.panel {
+    border: 2px black solid;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    margin: 2vh;
+}
+
+.panel img {
+    border: 2px black solid;
+
+    grid-area: 1 / 1 / 3 / 3;
+
+    height: 15rem;
+    width: auto;
+    margin: 2vh;
+}
+
+.panel h4 {
+    font-family: "Roboto Slab";
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 1px 0 0 #000, 0 -2px 0 #000, 
+                 0 2px 0 #000, -1px 0 0 #000;
+
+    grid-area: 1 / 3 / 1 / 5;
+}
+
+.panel p {
+    font-family: "Montserrat";
+    font-size: 1.2rem;
+    text-align: center;
+
+    grid-area: 2 / 3 / 2 / 5;
+
+    margin-right: 3vh;
+}
+
+/* Panel colors */
+
+.first-panel {
+    background: linear-gradient(#ffffc0, #ffffff);
+    color: #50a2ca;
+}
+
+.first-panel p {
+    color: #000;
+}
+
+.second-panel {
+    background: linear-gradient(#ad94af, #cba0a9);
+    color: #ffffc0;
+}
+
+.second-panel p {
+    color: #fff;
+}
+
+.third-panel {
+    background-color: #000;
+    color: #fff;
+}
+
+/* sign-up page */
+
+.label {
+    font-family: "Roboto Slab";
+    font-size: 2.5rem;
+    letter-spacing: .2rem;
+    color: #50a2ca;
+
+    text-shadow: 1px 0 0 #000, 0 -2px 0 #000, 
+    0 2px 0 #000, -1px 0 0 #000;
+}
+
+.page form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.page form * {
+    flex: 1 0 20vw;
+
+    margin: 2vh 5vw;
+}
+
+.page input {
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    
+    border: 2px black solid;
+    padding: 1vh 1vw;
+    
+}
+
+.page input:focus {
+    outline: black solid 3px;
+}
+
+.page form button {
+    font-family: "Roboto Slab";
+    font-size: 2.5rem;
+    color: #fff;
+    background-color: #C0FFE0;
+    border: 2px black solid;
+    cursor: pointer;
+
+    text-shadow: 2px 0 0 #000, 0 -3px 0 #000, 
+                 0 3px 0 #000, -2px 0 0 #000;
+
+    margin: 10vh 25vw 0;
+}
+
+.page form button:hover {
+    background-color: #00df70;
+}
+
+.hand-drawn-border {
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+    border-bottom-right-radius: 225px 15px;
+    border-bottom-left-radius:15px 255px;
+}
+
+.margin-bottom-fix {
+    margin-bottom: 5vh;
+}
+
+.error {
+    font-family: "Roboto Slab";
+    font-size: 2rem;
+    text-align: center;
+
+    grid-area: 3 / 2 / 6 / 5;
+    margin-bottom: 10vh;
+}
+
+.error a {
+    color: #000;
+}
