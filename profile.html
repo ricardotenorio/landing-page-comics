@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error | Comic Reader</title>
+    <title>Profile | Comic Reader</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,7 +14,13 @@
             <h3>Comic Reader</h3>
         </header>
 
-        <article class="page error">
+        <article id="profile-content" class="page">
+            <h3 id="welcome-msg"></h3>
+
+            <h3 id="loading-msg"></h3>
+        </article>
+
+        <article id="error-content" class="page error hidden">
             <h3>418:</h3>
             <h3>I'm a teapot</h3>
             
@@ -23,5 +29,7 @@
             </a>
         </article>
     </main>
+
+    <script src="script/profile.js"></script>
 </body>
 </html>
